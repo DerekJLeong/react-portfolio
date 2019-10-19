@@ -1,0 +1,60 @@
+nav {
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   top: 0;
+   z-index: 98;
+   background-image: radial-gradient(ellipse, #242c3a, #0c0f14);
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+nav a {
+   font-family: "IBM Plex Mono", monospace;
+   font-size: 2rem;
+   margin: 2rem 1rem;
+   color: #ebecee;
+}
+nav a:nth-of-type(1):hover {
+   color: #ffffff;
+   text-decoration-color: #f15946;
+}
+nav a:nth-of-type(2):hover {
+   color: #ffffff;
+   text-decoration-color: #365fd8;
+}
+nav a:nth-of-type(3):hover {
+   color: #ffffff;
+   text-decoration-color: #f3ce4c;
+}
+nav a:nth-of-type(4):hover {
+   color: #ffffff;
+   text-decoration-color: #1baa65;
+}
+nav a img {
+   position: absolute;
+   width: 2rem;
+   height: auto;
+   padding-left: 0.5rem;
+}
+.navButton {
+   z-index: 99;
+   position: fixed;
+   margin: 1rem;
+   top: 1rem;
+   right: 1rem;
+   width: 48px;
+   height: 48px;
+   background-size: cover;
+}
+.show {
+   display: flex;
+}
+.opened {
+   background-image: url("images/menu.svg");
+}
+
+.closed {
+   background-image: url("images/close.svg");
+}
